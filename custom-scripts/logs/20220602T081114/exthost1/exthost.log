@@ -1,0 +1,33 @@
+[2022-06-02 08:11:25.259] [exthost] [info] Extension host with pid 1951 started
+[2022-06-02 08:11:25.759] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-06-02 08:11:25.975] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-06-02 08:11:26.217] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-06-02 08:11:26.364] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-06-02 08:11:26.608] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-06-02 08:11:27.058] [exthost] [info] Eager extensions activated
+[2022-06-02 08:11:27.077] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-06-02 08:11:27.149] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-06-02 08:12:10.020] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-06-02 08:12:10.027] [exthost] [info] Extension host with pid 1951 exiting with code 0
+[2022-06-02 08:12:12.152] [exthost] [info] Extension host with pid 2028 started
+[2022-06-02 08:12:12.152] [exthost] [info] Skipping acquiring lock for /home/labredes/Documentos/Tutorial3/buildroot/custom-scripts/User/workspaceStorage/19fc82457a71145a1bf1437c96bc1935.
+[2022-06-02 08:12:12.286] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-06-02 08:12:12.290] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-06-02 08:12:12.292] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-06-02 08:12:12.304] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-06-02 08:12:12.311] [exthost] [info] Eager extensions activated
+[2022-06-02 08:12:12.314] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-06-02 08:12:12.319] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-06-02 08:12:26.440] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+[2022-06-02 08:23:06.645] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-06-02 08:23:06.650] [exthost] [info] Extension host with pid 2028 exiting with code 0
+[2022-06-02 08:23:08.621] [exthost] [info] Extension host with pid 3213 started
+[2022-06-02 08:23:08.621] [exthost] [info] Skipping acquiring lock for /home/labredes/Documentos/Tutorial3/buildroot/custom-scripts/User/workspaceStorage/62e199214ff6053fd55bdf40c4da26b4.
+[2022-06-02 08:23:08.731] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-06-02 08:23:08.735] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-06-02 08:23:08.737] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-06-02 08:23:08.750] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-06-02 08:23:08.775] [exthost] [info] Eager extensions activated
+[2022-06-02 08:23:08.787] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-06-02 08:23:08.792] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-06-02 08:23:08.922] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github

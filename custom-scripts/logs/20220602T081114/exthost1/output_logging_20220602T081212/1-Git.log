@@ -1,0 +1,16 @@
+[2022-06-02T11:12:26.459Z] Validating found git in: git
+[2022-06-02T11:12:26.480Z] Using git 2.20.1 from git
+[2022-06-02T11:12:26.637Z] > git rev-parse --git-dir [1ms]
+[2022-06-02T11:12:26.646Z] Open repository: /home/labredes/Documentos/Tutorial3/buildroot
+[2022-06-02T11:12:29.866Z] > git symbolic-ref --short HEAD [1ms]
+[2022-06-02T11:12:29.955Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master [85ms]
+[2022-06-02T11:12:29.969Z] > git remote --verbose [4ms]
+[2022-06-02T11:12:29.969Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [11ms]
+[2022-06-02T11:12:29.994Z] > git config --get commit.template [2ms]
+[2022-06-02T11:12:30.506Z] > git ls-files --stage -- /home/labredes/Documentos/Tutorial3/buildroot/custom-scripts/setpriority-master/setpriority.c [27ms]
+[2022-06-02T11:12:31.232Z] > git ls-files --stage -- /home/labredes/Documentos/Tutorial3/buildroot/custom-scripts/setpriority-master/deadline.c [3ms]
+[2022-06-02T11:12:37.369Z] > git ls-files --stage -- /home/labredes/Documentos/Tutorial3/buildroot/custom-scripts/setpriority-master/setpriority.c [3ms]
+[2022-06-02T11:12:48.619Z] > git ls-files --stage -- /home/labredes/Documentos/Tutorial3/buildroot/custom-scripts/setpriority-master/deadline.c [3ms]
+[2022-06-02T11:12:53.422Z] > git ls-files --stage -- /home/labredes/Documentos/Tutorial3/buildroot/custom-scripts/setpriority-master/setpriority.c [3ms]
+[2022-06-02T11:12:55.618Z] > git ls-files --stage -- /home/labredes/Documentos/Tutorial3/buildroot/custom-scripts/setpriority-master/Makefile [3ms]
+[2022-06-02T11:13:04.261Z] > git ls-files --stage -- /home/labredes/Documentos/Tutorial3/buildroot/custom-scripts/setpriority-master/setpriority.c [4ms]

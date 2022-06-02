@@ -1,0 +1,18 @@
+[2022-06-02 08:11:16.310] [main] [info] window#load: attempt to load window (id: 1)
+[2022-06-02 08:11:16.455] [main] [info] update#setState idle
+[2022-06-02 08:11:16.896] [main] [info] ExtensionHostStarterWorker created
+[2022-06-02 08:11:21.168] [main] [info] window#load: window reported ready (id: 1)
+[2022-06-02 08:11:22.036] [main] [info] Starting extension host with pid 1951 (fork() took 39 ms).
+[2022-06-02 08:11:22.036] [main] [info] ExtensionHostStarterWorker.start() took 40 ms.
+[2022-06-02 08:11:46.457] [main] [info] update#setState checking for updates
+[2022-06-02 08:11:46.463] [main] [info] update#setState available for download
+[2022-06-02 08:12:10.148] [main] [info] window#load: attempt to load window (id: 1)
+[2022-06-02 08:12:10.156] [main] [info] Extension host with pid 1951 exited with code: 0, signal: null.
+[2022-06-02 08:12:11.079] [main] [info] window#load: window reported ready (id: 1)
+[2022-06-02 08:12:11.536] [main] [info] Starting extension host with pid 2028 (fork() took 7 ms).
+[2022-06-02 08:12:11.536] [main] [info] ExtensionHostStarterWorker.start() took 29 ms.
+[2022-06-02 08:23:06.715] [main] [info] window#load: attempt to load window (id: 1)
+[2022-06-02 08:23:06.720] [main] [info] Extension host with pid 2028 exited with code: 0, signal: null.
+[2022-06-02 08:23:07.677] [main] [info] window#load: window reported ready (id: 1)
+[2022-06-02 08:23:08.032] [main] [info] Starting extension host with pid 3213 (fork() took 4 ms).
+[2022-06-02 08:23:08.032] [main] [info] ExtensionHostStarterWorker.start() took 6 ms.
