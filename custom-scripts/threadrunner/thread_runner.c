@@ -137,7 +137,7 @@ int main(int argc, char **argv)
 	}
 	normalized_buffer[normalize_index] = last_char;
 
-	printf("\n\n%s\n", normalized_buffer);
+	printf("\n\n%s\n\n", normalized_buffer);
 	
 	// pthread_create(&thr, NULL, run, NULL);
 	// setpriority(&thr, SCHED_FIFO, 1);
