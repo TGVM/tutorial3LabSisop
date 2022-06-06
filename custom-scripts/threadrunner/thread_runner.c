@@ -6,6 +6,8 @@
 #include <linux/sched.h>
 
 static char *buffer = NULL;
+static int *policies = NULL;
+static int *priorities = NULL;
 int buffer_size = 0;
 int buffer_index = 0;
 
@@ -84,12 +86,14 @@ void *char_printer(void *input) {
 	}
 }
 
+
+
 int main(int argc, char **argv)
 {
 	//thread_runner <número_de_threads> <tamanho_do_buffer_global_em_kilobytes> <politica> <prioridade>
 
 	if (argc < 5){
-		printf("usage: %s <número_de_threads> <tamanho_do_buffer_global_em_kilobytes> <politica> <prioridade>\n\n", argv[0]);
+		printf("usage: %s <número_de_threads> <tamanho_do_buffer_global_em_kilobytes> <politica thr0> <prioridade thr0> ... <politica thrN> <prioridade thrN>\n\n", argv[0]);
 
 		return 0;
 	}
@@ -97,8 +101,33 @@ int main(int argc, char **argv)
 	pthread_t thr[atoi(argv[1])];
 	buffer_size = atoi(argv[2])*1024;
 	buffer = (char *)malloc((buffer_size-1)*sizeof(char));
-	int thr_policy = atoi(argv[3]);
-	int thr_priority = atoi(argv[4]);
+	policies = (int *)malloc((buffer_size-1)*sizeof(int));
+	priorities = (int *)malloc((buffer_size-1)*sizeof(int));
+	//int thr_policy = atoi(argv[3]);
+	//int thr_priority = atoi(argv[4]);
+	
+	// Set policy and priority for each thread
+	int j=0;
+	for(int i=3; i<argc; i=i+2) {
+		//printf("argv %i : %i", i, atoi(argv[i]));
+		policies[j] = atoi(argv[i]);
+		//printf("argv %i : %i", i+1, atoi(argv[i+1]));
+		priorities[j] = atoi(argv[i+1]);
+
+		j++;
+	}
+
+	/*printf("[");
+	for(int i=0; i<atoi(argv[1]); i++) {
+		printf("%i,",policies[i]);
+	}
+	printf("]");
+
+	printf("[");
+	for(int i=0; i<atoi(argv[1]); i++) {
+		printf("%i,",priorities[i]);
+	}
+	printf("]");*/
 
 	if (pthread_mutex_init(&semaphore, NULL) != 0)
     {
@@ -109,8 +138,10 @@ int main(int argc, char **argv)
 	// Threads wait until everyone is created
 	pthread_mutex_lock(&semaphore);
 	for(int i=0; i<atoi(argv[1]); i++) {
+		printf("thread %i : char %c ; policy %i ; priority %i\n", i, (97+i), policies[i], priorities[i]);
 		pthread_create(&(thr[i]), NULL, char_printer, (void *)(97+i));
-		setpriority(&(thr[i]), thr_policy, thr_priority);
+		//setpriority(&(thr[i]), thr_policy, thr_priority);
+		setpriority(&(thr[i]), policies[i], priorities[i]);
 	}
 	//Go go go
 	pthread_mutex_unlock(&semaphore);
